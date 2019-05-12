@@ -16,8 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 
-#\\TODO:Add the urls of the profiles_api app!
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('profiles_api.urls'))
+    path('',include('profiles_api.urls')),
+    path('simulator/',include('simulator.urls'))
 ]

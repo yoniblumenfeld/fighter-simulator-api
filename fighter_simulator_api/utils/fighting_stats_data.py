@@ -20,11 +20,11 @@ def get_fighter_total_power(fighter):
     martial_art
     Returns the fighter total power considering all aspects
     """
-    martial_art_min,martial_art_max = MARTIAL_ARTS[fighter['martial_art']]
+    martial_art_min,martial_art_max = MARTIAL_ARTS[fighter['martial_art'].value]
     martial_art_rand_res = random.randint(martial_art_min,martial_art_max)
-    return(fighter['stamina']*0.20 +
-           fighter['strength']*0.25 +
-           fighter['speed']*0.25 +
+    return(fighter['stamina'].value*0.20 +
+           fighter['strength'].value*0.25 +
+           fighter['speed'].value*0.25 +
            martial_art_rand_res*0.30)
 
 

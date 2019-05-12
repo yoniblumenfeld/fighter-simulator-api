@@ -17,6 +17,7 @@ class ProfileTests(TestCase):
             "test123"
         )
 
+
     def test_list_all_users(self):
         """
         Checks whether the result objects contain user1's and user2's emails or not
